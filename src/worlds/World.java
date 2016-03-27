@@ -12,8 +12,8 @@ public class World {
     private int[][] map;
 
     public World(String path){
-        loadWorld(path);
         map = new int[256][256];
+        loadWorld(path);
     }
 
     public void tick(){
