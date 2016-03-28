@@ -13,6 +13,7 @@ public class Tile {
     public static Tile stoneSlabTiles = new StoneSlabTile(3);
     public static Tile woodTile = new WoodTile(4);
     public static Tile ironTile = new IronTile(5);
+    public static Tile cactus = new Cactus(6);
 
     // CLASS
     public static final int TILE_WIDTH = 64;

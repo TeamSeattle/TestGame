@@ -1,7 +1,5 @@
 package gfx;
 
-import com.sun.deploy.panel.WinUpdatePanel;
-
 import java.awt.image.BufferedImage;
 
 public class Assets {
@@ -15,6 +13,7 @@ public class Assets {
     public static BufferedImage stone_slabs;
     public static BufferedImage wood;
     public static BufferedImage iron;
+    public static BufferedImage cactus;
     public static BufferedImage player;
 
     public static void init() {
@@ -27,5 +26,6 @@ public class Assets {
         wood = sheet.crop(WIDTH * 4, 0, WIDTH, HEIGHT);
         iron = sheet.crop(WIDTH * 6, HEIGHT, WIDTH, HEIGHT);
         player = sheet.crop(0, HEIGHT * 4, WIDTH, HEIGHT);
+        cactus = sheet.crop(WIDTH * 6,HEIGHT * 4,WIDTH,HEIGHT);
     }
 }

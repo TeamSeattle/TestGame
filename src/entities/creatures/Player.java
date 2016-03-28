@@ -2,7 +2,6 @@ package entities.creatures;
 
 import Main.Game;
 import gfx.Assets;
-
 import java.awt.*;
 
 public class Player extends Creature {
