@@ -44,6 +44,7 @@ public class Game implements Runnable {
 
     // Initialize
     private void init() {
+        GameState.level = "level_2.txt";
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(keyManager);
         Assets.init();
