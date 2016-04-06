@@ -18,6 +18,6 @@ public class MenuState extends State {
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.wood, 0, 0, null);
+        g.fillRect(0,0,768,768);
     }
 }

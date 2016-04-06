@@ -34,7 +34,7 @@ public class Game implements Runnable {
     private KeyManager keyManager;
 
     // Constructor
-    public Game(String title, int width, int height) {
+    public Game (String title, int width, int height) {
         this.title = title;
         this.width = width;
         this.height = height;
@@ -60,7 +60,7 @@ public class Game implements Runnable {
     private void tick() {
         keyManager.tick();
 
-        if (State.getState() != null){
+        if (State.getState() != null) {
             State.getState().tick();
         }
     }
@@ -108,12 +108,12 @@ public class Game implements Runnable {
 
             // Call tick and render
             if (delta >= 1) {
-                tick();
-                render();
+             tick();
+             render();
 
 
-                ticks++;
-                delta--;
+             ticks++;
+             delta--;
             }
 
             // Reset and print the FPS
