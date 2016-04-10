@@ -17,7 +17,7 @@ public class Game implements Runnable {
     public int width;
     public int height;
     private boolean running = false;
-    private int FPS = 120;
+    private int FPS = 1000;
 
     // Thread
     private Thread thread;
