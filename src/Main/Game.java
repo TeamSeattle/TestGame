@@ -17,7 +17,7 @@ public class Game implements Runnable {
     public int width;
     public int height;
     private boolean running = false;
-    private int FPS = 120;
+    private int FPS = 1000;
 
     // Thread
     private Thread thread;
@@ -44,6 +44,7 @@ public class Game implements Runnable {
 
     // Initialize
     private void init() {
+        GameState.level = "level_2.txt";
         display = new Display(title, width, height);
         display.getFrame().addKeyListener(keyManager);
         Assets.init();
